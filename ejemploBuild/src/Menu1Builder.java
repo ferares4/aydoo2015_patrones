@@ -1,11 +1,17 @@
 
-public class Menu1 implements PlatoDeComidaBuilder{
+public class Menu1Builder implements PlatoDeComidaBuilder{
 	
 	private PlatoDeComida platoDeComida;
+	
+	public Menu1Builder(){
+		
+		platoDeComida = new PlatoDeComida();
+		
+	}
 
 	@Override
 	public void construirBebida() {
-		platoDeComida.setBebida("Coca-Cola");
+		platoDeComida.setBebida("CocaCola");
 		
 	}
 

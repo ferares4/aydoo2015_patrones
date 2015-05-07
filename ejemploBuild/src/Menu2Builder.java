@@ -1,7 +1,13 @@
 
-public class Menu2 implements PlatoDeComidaBuilder {
+public class Menu2Builder implements PlatoDeComidaBuilder {
 	
 	private PlatoDeComida platoDeComida;
+	
+	public Menu2Builder(){
+		
+		platoDeComida = new PlatoDeComida();
+		
+	}
 
 	@Override
 	public void construirBebida() {
